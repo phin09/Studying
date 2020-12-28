@@ -1,0 +1,153 @@
+body {
+  background-color: #FEF5E6;
+  font-family: serif;
+}
+#Nav_bar{
+  background-color: lightgray;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+#Nav_name{
+  display: flex;
+  padding: 0px;
+}
+#Nav_name li{
+  display: inline;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+#Nav_name li a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+#Nav_name li a:active{
+  color: white;
+}
+.middle1{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+#main{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+#main img{
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 50px;
+  margin-bottom: 30px;
+}
+#Hello{
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px;
+  margin-top: 90px;
+}
+#Hello>p{
+  font-size: 40px;
+  width: 500px;
+}
+#SNS{
+  text-align: center;
+  margin-top: 100px;
+}
+#SNS a{
+  text-decoration: none;
+  margin: 30px;
+}
+#SNS a>img{
+  width: 50px;
+}
+#middle3 {
+  font-size: 2vw;
+  font-weight: bold;
+  color: rgb(213,213,213);
+  text-align: center;
+  margin-top: 30px;
+}
+#middle3 p {
+  font-size: 1vw;
+}
+#middle4 {
+  border-top: 3px dotted gray;
+  border-bottom: 3px solid gray;
+  text-align: center;
+  margin-top: 100px;
+  padding: 15px;
+  }
+#middle4 a {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: lightblue;
+}
+#middle4 a:hover{
+  color: blue;
+}
+article h2 {
+  color: brown;
+  font-size: 30px;
+  text-align: center;
+}
+#About {
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+}
+#About .about_text {
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+}
+#About li {
+  display: inline;
+}
+#About img{
+  width: 60%;
+}
+.food {
+  text-align: center;
+  margin: auto;
+  padding-top: 200px;
+}
+ .food img{
+  width: 250px;
+}
+
+
+@media(max-width: 1290px){
+  #main {
+    display: grid;
+    grid-template-columns: none;
+      }
+    #main div {
+      display: block; margin:0 auto;
+      margin-top: 20px;
+      text-align: center;
+      }
+    #Hello {
+      font-size: 40px;
+    }
+    #Hello p {
+      font-size: 30px;
+    }
+    #SNS a{
+      display: inline;
+      margin: 10px;
+    }
+    #SNS a>img{
+      width: 30px;
+    }
+    #favorite img{
+      width: 75%;
+    }
+}
